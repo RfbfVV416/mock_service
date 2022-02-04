@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  database:
+    container_name: postgres_database
+    image: "postgres"
+    restart: always
+    environment:
+      - POSTGRES_PASSWORD=2812tyHx_8
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=postgres
+    ports:
+      - "5432:5432"
